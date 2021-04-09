@@ -1,0 +1,1804 @@
+define(['dart_sdk', 'packages/flutter/src/services/keyboard_key.dart'], (function load__packages__flutter__src__services__keyboard_maps_dart(dart_sdk, packages__flutter__src__services__keyboard_key$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const keyboard_key = packages__flutter__src__services__keyboard_key$46dart.src__services__keyboard_key;
+  var keyboard_maps = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    LogicalKeyboardKeyL: () => (T.LogicalKeyboardKeyL = dart.constFn(dart.legacy(keyboard_key.LogicalKeyboardKey)))(),
+    PhysicalKeyboardKeyL: () => (T.PhysicalKeyboardKeyL = dart.constFn(dart.legacy(keyboard_key.PhysicalKeyboardKey)))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "None",
+        [LogicalKeyboardKey_keyId]: 4294967296.0
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Sleep",
+        [LogicalKeyboardKey_keyId]: 4295032962.0
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Wake Up",
+        [LogicalKeyboardKey_keyId]: 4295032963.0
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "a",
+        [LogicalKeyboardKey_debugName]: "Key A",
+        [LogicalKeyboardKey_keyId]: 97
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "b",
+        [LogicalKeyboardKey_debugName]: "Key B",
+        [LogicalKeyboardKey_keyId]: 98
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "c",
+        [LogicalKeyboardKey_debugName]: "Key C",
+        [LogicalKeyboardKey_keyId]: 99
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "d",
+        [LogicalKeyboardKey_debugName]: "Key D",
+        [LogicalKeyboardKey_keyId]: 100
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "e",
+        [LogicalKeyboardKey_debugName]: "Key E",
+        [LogicalKeyboardKey_keyId]: 101
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "f",
+        [LogicalKeyboardKey_debugName]: "Key F",
+        [LogicalKeyboardKey_keyId]: 102
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "g",
+        [LogicalKeyboardKey_debugName]: "Key G",
+        [LogicalKeyboardKey_keyId]: 103
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "h",
+        [LogicalKeyboardKey_debugName]: "Key H",
+        [LogicalKeyboardKey_keyId]: 104
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "i",
+        [LogicalKeyboardKey_debugName]: "Key I",
+        [LogicalKeyboardKey_keyId]: 105
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "j",
+        [LogicalKeyboardKey_debugName]: "Key J",
+        [LogicalKeyboardKey_keyId]: 106
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "k",
+        [LogicalKeyboardKey_debugName]: "Key K",
+        [LogicalKeyboardKey_keyId]: 107
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "l",
+        [LogicalKeyboardKey_debugName]: "Key L",
+        [LogicalKeyboardKey_keyId]: 108
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "m",
+        [LogicalKeyboardKey_debugName]: "Key M",
+        [LogicalKeyboardKey_keyId]: 109
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "n",
+        [LogicalKeyboardKey_debugName]: "Key N",
+        [LogicalKeyboardKey_keyId]: 110
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "o",
+        [LogicalKeyboardKey_debugName]: "Key O",
+        [LogicalKeyboardKey_keyId]: 111
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "p",
+        [LogicalKeyboardKey_debugName]: "Key P",
+        [LogicalKeyboardKey_keyId]: 112
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "q",
+        [LogicalKeyboardKey_debugName]: "Key Q",
+        [LogicalKeyboardKey_keyId]: 113
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "r",
+        [LogicalKeyboardKey_debugName]: "Key R",
+        [LogicalKeyboardKey_keyId]: 114
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "s",
+        [LogicalKeyboardKey_debugName]: "Key S",
+        [LogicalKeyboardKey_keyId]: 115
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "t",
+        [LogicalKeyboardKey_debugName]: "Key T",
+        [LogicalKeyboardKey_keyId]: 116
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "u",
+        [LogicalKeyboardKey_debugName]: "Key U",
+        [LogicalKeyboardKey_keyId]: 117
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "v",
+        [LogicalKeyboardKey_debugName]: "Key V",
+        [LogicalKeyboardKey_keyId]: 118
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "w",
+        [LogicalKeyboardKey_debugName]: "Key W",
+        [LogicalKeyboardKey_keyId]: 119
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "x",
+        [LogicalKeyboardKey_debugName]: "Key X",
+        [LogicalKeyboardKey_keyId]: 120
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "y",
+        [LogicalKeyboardKey_debugName]: "Key Y",
+        [LogicalKeyboardKey_keyId]: 121
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "z",
+        [LogicalKeyboardKey_debugName]: "Key Z",
+        [LogicalKeyboardKey_keyId]: 122
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "1",
+        [LogicalKeyboardKey_debugName]: "Digit 1",
+        [LogicalKeyboardKey_keyId]: 49
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "2",
+        [LogicalKeyboardKey_debugName]: "Digit 2",
+        [LogicalKeyboardKey_keyId]: 50
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "3",
+        [LogicalKeyboardKey_debugName]: "Digit 3",
+        [LogicalKeyboardKey_keyId]: 51
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "4",
+        [LogicalKeyboardKey_debugName]: "Digit 4",
+        [LogicalKeyboardKey_keyId]: 52
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "5",
+        [LogicalKeyboardKey_debugName]: "Digit 5",
+        [LogicalKeyboardKey_keyId]: 53
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "6",
+        [LogicalKeyboardKey_debugName]: "Digit 6",
+        [LogicalKeyboardKey_keyId]: 54
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "7",
+        [LogicalKeyboardKey_debugName]: "Digit 7",
+        [LogicalKeyboardKey_keyId]: 55
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "8",
+        [LogicalKeyboardKey_debugName]: "Digit 8",
+        [LogicalKeyboardKey_keyId]: 56
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "9",
+        [LogicalKeyboardKey_debugName]: "Digit 9",
+        [LogicalKeyboardKey_keyId]: 57
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "0",
+        [LogicalKeyboardKey_debugName]: "Digit 0",
+        [LogicalKeyboardKey_keyId]: 48
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Enter",
+        [LogicalKeyboardKey_keyId]: 4295426088.0
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Escape",
+        [LogicalKeyboardKey_keyId]: 4295426089.0
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Backspace",
+        [LogicalKeyboardKey_keyId]: 4295426090.0
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Tab",
+        [LogicalKeyboardKey_keyId]: 4295426091.0
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: " ",
+        [LogicalKeyboardKey_debugName]: "Space",
+        [LogicalKeyboardKey_keyId]: 32
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "-",
+        [LogicalKeyboardKey_debugName]: "Minus",
+        [LogicalKeyboardKey_keyId]: 45
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "=",
+        [LogicalKeyboardKey_debugName]: "Equal",
+        [LogicalKeyboardKey_keyId]: 61
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "[",
+        [LogicalKeyboardKey_debugName]: "Bracket Left",
+        [LogicalKeyboardKey_keyId]: 91
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "]",
+        [LogicalKeyboardKey_debugName]: "Bracket Right",
+        [LogicalKeyboardKey_keyId]: 93
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "\\",
+        [LogicalKeyboardKey_debugName]: "Backslash",
+        [LogicalKeyboardKey_keyId]: 92
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ";",
+        [LogicalKeyboardKey_debugName]: "Semicolon",
+        [LogicalKeyboardKey_keyId]: 59
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "'",
+        [LogicalKeyboardKey_debugName]: "Quote",
+        [LogicalKeyboardKey_keyId]: 39
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "`",
+        [LogicalKeyboardKey_debugName]: "Backquote",
+        [LogicalKeyboardKey_keyId]: 96
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ",",
+        [LogicalKeyboardKey_debugName]: "Comma",
+        [LogicalKeyboardKey_keyId]: 44
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ".",
+        [LogicalKeyboardKey_debugName]: "Period",
+        [LogicalKeyboardKey_keyId]: 46
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "/",
+        [LogicalKeyboardKey_debugName]: "Slash",
+        [LogicalKeyboardKey_keyId]: 47
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Caps Lock",
+        [LogicalKeyboardKey_keyId]: 4295426105.0
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F1",
+        [LogicalKeyboardKey_keyId]: 4295426106.0
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F2",
+        [LogicalKeyboardKey_keyId]: 4295426107.0
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F3",
+        [LogicalKeyboardKey_keyId]: 4295426108.0
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F4",
+        [LogicalKeyboardKey_keyId]: 4295426109.0
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F5",
+        [LogicalKeyboardKey_keyId]: 4295426110.0
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F6",
+        [LogicalKeyboardKey_keyId]: 4295426111.0
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F7",
+        [LogicalKeyboardKey_keyId]: 4295426112.0
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F8",
+        [LogicalKeyboardKey_keyId]: 4295426113.0
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F9",
+        [LogicalKeyboardKey_keyId]: 4295426114.0
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F10",
+        [LogicalKeyboardKey_keyId]: 4295426115.0
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F11",
+        [LogicalKeyboardKey_keyId]: 4295426116.0
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "F12",
+        [LogicalKeyboardKey_keyId]: 4295426117.0
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Print Screen",
+        [LogicalKeyboardKey_keyId]: 4295426118.0
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Scroll Lock",
+        [LogicalKeyboardKey_keyId]: 4295426119.0
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Pause",
+        [LogicalKeyboardKey_keyId]: 4295426120.0
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Insert",
+        [LogicalKeyboardKey_keyId]: 4295426121.0
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Home",
+        [LogicalKeyboardKey_keyId]: 4295426122.0
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Page Up",
+        [LogicalKeyboardKey_keyId]: 4295426123.0
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Delete",
+        [LogicalKeyboardKey_keyId]: 4295426124.0
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "End",
+        [LogicalKeyboardKey_keyId]: 4295426125.0
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Page Down",
+        [LogicalKeyboardKey_keyId]: 4295426126.0
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Arrow Right",
+        [LogicalKeyboardKey_keyId]: 4295426127.0
+      });
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Arrow Left",
+        [LogicalKeyboardKey_keyId]: 4295426128.0
+      });
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Arrow Down",
+        [LogicalKeyboardKey_keyId]: 4295426129.0
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Arrow Up",
+        [LogicalKeyboardKey_keyId]: 4295426130.0
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Num Lock",
+        [LogicalKeyboardKey_keyId]: 4295426131.0
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "/",
+        [LogicalKeyboardKey_debugName]: "Numpad Divide",
+        [LogicalKeyboardKey_keyId]: 4295426132.0
+      });
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "*",
+        [LogicalKeyboardKey_debugName]: "Numpad Multiply",
+        [LogicalKeyboardKey_keyId]: 4295426133.0
+      });
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "-",
+        [LogicalKeyboardKey_debugName]: "Numpad Subtract",
+        [LogicalKeyboardKey_keyId]: 4295426134.0
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "+",
+        [LogicalKeyboardKey_debugName]: "Numpad Add",
+        [LogicalKeyboardKey_keyId]: 4295426135.0
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Numpad Enter",
+        [LogicalKeyboardKey_keyId]: 4295426136.0
+      });
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "1",
+        [LogicalKeyboardKey_debugName]: "Numpad 1",
+        [LogicalKeyboardKey_keyId]: 4295426137.0
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "2",
+        [LogicalKeyboardKey_debugName]: "Numpad 2",
+        [LogicalKeyboardKey_keyId]: 4295426138.0
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "3",
+        [LogicalKeyboardKey_debugName]: "Numpad 3",
+        [LogicalKeyboardKey_keyId]: 4295426139.0
+      });
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "4",
+        [LogicalKeyboardKey_debugName]: "Numpad 4",
+        [LogicalKeyboardKey_keyId]: 4295426140.0
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "5",
+        [LogicalKeyboardKey_debugName]: "Numpad 5",
+        [LogicalKeyboardKey_keyId]: 4295426141.0
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "6",
+        [LogicalKeyboardKey_debugName]: "Numpad 6",
+        [LogicalKeyboardKey_keyId]: 4295426142.0
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "7",
+        [LogicalKeyboardKey_debugName]: "Numpad 7",
+        [LogicalKeyboardKey_keyId]: 4295426143.0
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "8",
+        [LogicalKeyboardKey_debugName]: "Numpad 8",
+        [LogicalKeyboardKey_keyId]: 4295426144.0
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "9",
+        [LogicalKeyboardKey_debugName]: "Numpad 9",
+        [LogicalKeyboardKey_keyId]: 4295426145.0
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "0",
+        [LogicalKeyboardKey_debugName]: "Numpad 0",
+        [LogicalKeyboardKey_keyId]: 4295426146.0
+      });
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ".",
+        [LogicalKeyboardKey_debugName]: "Numpad Decimal",
+        [LogicalKeyboardKey_keyId]: 4295426147.0
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Context Menu",
+        [LogicalKeyboardKey_keyId]: 4295426149.0
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Power",
+        [LogicalKeyboardKey_keyId]: 4295426150.0
+      });
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "=",
+        [LogicalKeyboardKey_debugName]: "Numpad Equal",
+        [LogicalKeyboardKey_keyId]: 4295426151.0
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Help",
+        [LogicalKeyboardKey_keyId]: 4295426165.0
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Select",
+        [LogicalKeyboardKey_keyId]: 4295426167.0
+      });
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Cut",
+        [LogicalKeyboardKey_keyId]: 4295426171.0
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Copy",
+        [LogicalKeyboardKey_keyId]: 4295426172.0
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Paste",
+        [LogicalKeyboardKey_keyId]: 4295426173.0
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Audio Volume Mute",
+        [LogicalKeyboardKey_keyId]: 4295426175.0
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Audio Volume Up",
+        [LogicalKeyboardKey_keyId]: 4295426176.0
+      });
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Audio Volume Down",
+        [LogicalKeyboardKey_keyId]: 4295426177.0
+      });
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ",",
+        [LogicalKeyboardKey_debugName]: "Numpad Comma",
+        [LogicalKeyboardKey_keyId]: 4295426181.0
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Convert",
+        [LogicalKeyboardKey_keyId]: 4295426186.0
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Non Convert",
+        [LogicalKeyboardKey_keyId]: 4295426187.0
+      });
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "(",
+        [LogicalKeyboardKey_debugName]: "Numpad Paren Left",
+        [LogicalKeyboardKey_keyId]: 4295426230.0
+      });
+    },
+    get C114() {
+      return C[114] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: ")",
+        [LogicalKeyboardKey_debugName]: "Numpad Paren Right",
+        [LogicalKeyboardKey_keyId]: 4295426231.0
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Control Left",
+        [LogicalKeyboardKey_keyId]: 4295426272.0
+      });
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Shift Left",
+        [LogicalKeyboardKey_keyId]: 4295426273.0
+      });
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Alt Left",
+        [LogicalKeyboardKey_keyId]: 4295426274.0
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Meta Left",
+        [LogicalKeyboardKey_keyId]: 4295426275.0
+      });
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Control Right",
+        [LogicalKeyboardKey_keyId]: 4295426276.0
+      });
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Shift Right",
+        [LogicalKeyboardKey_keyId]: 4295426277.0
+      });
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Alt Right",
+        [LogicalKeyboardKey_keyId]: 4295426278.0
+      });
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Meta Right",
+        [LogicalKeyboardKey_keyId]: 4295426279.0
+      });
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Info",
+        [LogicalKeyboardKey_keyId]: 4295753824.0
+      });
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Closed Caption Toggle",
+        [LogicalKeyboardKey_keyId]: 4295753825.0
+      });
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Brightness Up",
+        [LogicalKeyboardKey_keyId]: 4295753839.0
+      });
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Brightness Down",
+        [LogicalKeyboardKey_keyId]: 4295753840.0
+      });
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Last",
+        [LogicalKeyboardKey_keyId]: 4295753859.0
+      });
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Channel Up",
+        [LogicalKeyboardKey_keyId]: 4295753884.0
+      });
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Channel Down",
+        [LogicalKeyboardKey_keyId]: 4295753885.0
+      });
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Play",
+        [LogicalKeyboardKey_keyId]: 4295753904.0
+      });
+    },
+    get C131() {
+      return C[131] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Pause",
+        [LogicalKeyboardKey_keyId]: 4295753905.0
+      });
+    },
+    get C132() {
+      return C[132] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Record",
+        [LogicalKeyboardKey_keyId]: 4295753906.0
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Fast Forward",
+        [LogicalKeyboardKey_keyId]: 4295753907.0
+      });
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Rewind",
+        [LogicalKeyboardKey_keyId]: 4295753908.0
+      });
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Track Next",
+        [LogicalKeyboardKey_keyId]: 4295753909.0
+      });
+    },
+    get C136() {
+      return C[136] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Track Previous",
+        [LogicalKeyboardKey_keyId]: 4295753910.0
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Stop",
+        [LogicalKeyboardKey_keyId]: 4295753911.0
+      });
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Eject",
+        [LogicalKeyboardKey_keyId]: 4295753912.0
+      });
+    },
+    get C139() {
+      return C[139] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Media Play Pause",
+        [LogicalKeyboardKey_keyId]: 4295753933.0
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Launch Mail",
+        [LogicalKeyboardKey_keyId]: 4295754122.0
+      });
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Launch Contacts",
+        [LogicalKeyboardKey_keyId]: 4295754125.0
+      });
+    },
+    get C142() {
+      return C[142] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Launch Calendar",
+        [LogicalKeyboardKey_keyId]: 4295754126.0
+      });
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Launch Assistant",
+        [LogicalKeyboardKey_keyId]: 4295754187.0
+      });
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Close",
+        [LogicalKeyboardKey_keyId]: 4295754243.0
+      });
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Browser Search",
+        [LogicalKeyboardKey_keyId]: 4295754273.0
+      });
+    },
+    get C146() {
+      return C[146] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Browser Forward",
+        [LogicalKeyboardKey_keyId]: 4295754277.0
+      });
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Browser Favorites",
+        [LogicalKeyboardKey_keyId]: 4295754282.0
+      });
+    },
+    get C148() {
+      return C[148] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Zoom In",
+        [LogicalKeyboardKey_keyId]: 4295754285.0
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Zoom Out",
+        [LogicalKeyboardKey_keyId]: 4295754286.0
+      });
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Zoom Toggle",
+        [LogicalKeyboardKey_keyId]: 4295754290.0
+      });
+    },
+    get C151() {
+      return C[151] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 1",
+        [LogicalKeyboardKey_keyId]: 4295360257.0
+      });
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 2",
+        [LogicalKeyboardKey_keyId]: 4295360258.0
+      });
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 3",
+        [LogicalKeyboardKey_keyId]: 4295360259.0
+      });
+    },
+    get C154() {
+      return C[154] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 4",
+        [LogicalKeyboardKey_keyId]: 4295360260.0
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 5",
+        [LogicalKeyboardKey_keyId]: 4295360261.0
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 6",
+        [LogicalKeyboardKey_keyId]: 4295360262.0
+      });
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 7",
+        [LogicalKeyboardKey_keyId]: 4295360263.0
+      });
+    },
+    get C158() {
+      return C[158] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 8",
+        [LogicalKeyboardKey_keyId]: 4295360264.0
+      });
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 9",
+        [LogicalKeyboardKey_keyId]: 4295360265.0
+      });
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 10",
+        [LogicalKeyboardKey_keyId]: 4295360266.0
+      });
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 11",
+        [LogicalKeyboardKey_keyId]: 4295360267.0
+      });
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 12",
+        [LogicalKeyboardKey_keyId]: 4295360268.0
+      });
+    },
+    get C163() {
+      return C[163] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 13",
+        [LogicalKeyboardKey_keyId]: 4295360269.0
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 14",
+        [LogicalKeyboardKey_keyId]: 4295360270.0
+      });
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 15",
+        [LogicalKeyboardKey_keyId]: 4295360271.0
+      });
+    },
+    get C166() {
+      return C[166] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button 16",
+        [LogicalKeyboardKey_keyId]: 4295360272.0
+      });
+    },
+    get C167() {
+      return C[167] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button A",
+        [LogicalKeyboardKey_keyId]: 4295360273.0
+      });
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button B",
+        [LogicalKeyboardKey_keyId]: 4295360274.0
+      });
+    },
+    get C169() {
+      return C[169] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button C",
+        [LogicalKeyboardKey_keyId]: 4295360275.0
+      });
+    },
+    get C170() {
+      return C[170] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Left 1",
+        [LogicalKeyboardKey_keyId]: 4295360276.0
+      });
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Left 2",
+        [LogicalKeyboardKey_keyId]: 4295360277.0
+      });
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Mode",
+        [LogicalKeyboardKey_keyId]: 4295360278.0
+      });
+    },
+    get C173() {
+      return C[173] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Right 1",
+        [LogicalKeyboardKey_keyId]: 4295360279.0
+      });
+    },
+    get C174() {
+      return C[174] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Right 2",
+        [LogicalKeyboardKey_keyId]: 4295360280.0
+      });
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Select",
+        [LogicalKeyboardKey_keyId]: 4295360281.0
+      });
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Start",
+        [LogicalKeyboardKey_keyId]: 4295360282.0
+      });
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Thumb Left",
+        [LogicalKeyboardKey_keyId]: 4295360283.0
+      });
+    },
+    get C178() {
+      return C[178] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Thumb Right",
+        [LogicalKeyboardKey_keyId]: 4295360284.0
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button X",
+        [LogicalKeyboardKey_keyId]: 4295360285.0
+      });
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Y",
+        [LogicalKeyboardKey_keyId]: 4295360286.0
+      });
+    },
+    get C181() {
+      return C[181] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Game Button Z",
+        [LogicalKeyboardKey_keyId]: 4295360287.0
+      });
+    },
+    get C182() {
+      return C[182] = dart.const({
+        __proto__: keyboard_key.LogicalKeyboardKey.prototype,
+        [LogicalKeyboardKey_keyLabel]: "",
+        [LogicalKeyboardKey_debugName]: "Fn",
+        [LogicalKeyboardKey_keyId]: 4294967314.0
+      });
+    },
+    get C0() {
+      return C[0] = dart.constMap(T.intL(), T.LogicalKeyboardKeyL(), [0, C[1] || CT.C1, 223, C[2] || CT.C2, 224, C[3] || CT.C3, 29, C[4] || CT.C4, 30, C[5] || CT.C5, 31, C[6] || CT.C6, 32, C[7] || CT.C7, 33, C[8] || CT.C8, 34, C[9] || CT.C9, 35, C[10] || CT.C10, 36, C[11] || CT.C11, 37, C[12] || CT.C12, 38, C[13] || CT.C13, 39, C[14] || CT.C14, 40, C[15] || CT.C15, 41, C[16] || CT.C16, 42, C[17] || CT.C17, 43, C[18] || CT.C18, 44, C[19] || CT.C19, 45, C[20] || CT.C20, 46, C[21] || CT.C21, 47, C[22] || CT.C22, 48, C[23] || CT.C23, 49, C[24] || CT.C24, 50, C[25] || CT.C25, 51, C[26] || CT.C26, 52, C[27] || CT.C27, 53, C[28] || CT.C28, 54, C[29] || CT.C29, 8, C[30] || CT.C30, 9, C[31] || CT.C31, 10, C[32] || CT.C32, 11, C[33] || CT.C33, 12, C[34] || CT.C34, 13, C[35] || CT.C35, 14, C[36] || CT.C36, 15, C[37] || CT.C37, 16, C[38] || CT.C38, 7, C[39] || CT.C39, 66, C[40] || CT.C40, 111, C[41] || CT.C41, 67, C[42] || CT.C42, 61, C[43] || CT.C43, 62, C[44] || CT.C44, 69, C[45] || CT.C45, 70, C[46] || CT.C46, 71, C[47] || CT.C47, 72, C[48] || CT.C48, 73, C[49] || CT.C49, 74, C[50] || CT.C50, 75, C[51] || CT.C51, 68, C[52] || CT.C52, 55, C[53] || CT.C53, 56, C[54] || CT.C54, 76, C[55] || CT.C55, 115, C[56] || CT.C56, 131, C[57] || CT.C57, 132, C[58] || CT.C58, 133, C[59] || CT.C59, 134, C[60] || CT.C60, 135, C[61] || CT.C61, 136, C[62] || CT.C62, 137, C[63] || CT.C63, 138, C[64] || CT.C64, 139, C[65] || CT.C65, 140, C[66] || CT.C66, 141, C[67] || CT.C67, 142, C[68] || CT.C68, 120, C[69] || CT.C69, 116, C[70] || CT.C70, 121, C[71] || CT.C71, 124, C[72] || CT.C72, 122, C[73] || CT.C73, 92, C[74] || CT.C74, 112, C[75] || CT.C75, 123, C[76] || CT.C76, 93, C[77] || CT.C77, 22, C[78] || CT.C78, 21, C[79] || CT.C79, 20, C[80] || CT.C80, 19, C[81] || CT.C81, 143, C[82] || CT.C82, 154, C[83] || CT.C83, 155, C[84] || CT.C84, 156, C[85] || CT.C85, 157, C[86] || CT.C86, 160, C[87] || CT.C87, 145, C[88] || CT.C88, 146, C[89] || CT.C89, 147, C[90] || CT.C90, 148, C[91] || CT.C91, 149, C[92] || CT.C92, 150, C[93] || CT.C93, 151, C[94] || CT.C94, 152, C[95] || CT.C95, 153, C[96] || CT.C96, 144, C[97] || CT.C97, 158, C[98] || CT.C98, 82, C[99] || CT.C99, 26, C[100] || CT.C100, 161, C[101] || CT.C101, 259, C[102] || CT.C102, 23, C[103] || CT.C103, 277, C[104] || CT.C104, 278, C[105] || CT.C105, 279, C[106] || CT.C106, 164, C[107] || CT.C107, 24, C[108] || CT.C108, 25, C[109] || CT.C109, 159, C[110] || CT.C110, 214, C[111] || CT.C111, 213, C[112] || CT.C112, 162, C[113] || CT.C113, 163, C[114] || CT.C114, 113, C[115] || CT.C115, 59, C[116] || CT.C116, 57, C[117] || CT.C117, 117, C[118] || CT.C118, 114, C[119] || CT.C119, 60, C[120] || CT.C120, 58, C[121] || CT.C121, 118, C[122] || CT.C122, 165, C[123] || CT.C123, 175, C[124] || CT.C124, 221, C[125] || CT.C125, 220, C[126] || CT.C126, 229, C[127] || CT.C127, 166, C[128] || CT.C128, 167, C[129] || CT.C129, 126, C[130] || CT.C130, 127, C[131] || CT.C131, 130, C[132] || CT.C132, 90, C[133] || CT.C133, 89, C[134] || CT.C134, 87, C[135] || CT.C135, 88, C[136] || CT.C136, 86, C[137] || CT.C137, 129, C[138] || CT.C138, 85, C[139] || CT.C139, 65, C[140] || CT.C140, 207, C[141] || CT.C141, 208, C[142] || CT.C142, 219, C[143] || CT.C143, 128, C[144] || CT.C144, 84, C[145] || CT.C145, 125, C[146] || CT.C146, 174, C[147] || CT.C147, 168, C[148] || CT.C148, 169, C[149] || CT.C149, 255, C[150] || CT.C150, 188, C[151] || CT.C151, 189, C[152] || CT.C152, 190, C[153] || CT.C153, 191, C[154] || CT.C154, 192, C[155] || CT.C155, 193, C[156] || CT.C156, 194, C[157] || CT.C157, 195, C[158] || CT.C158, 196, C[159] || CT.C159, 197, C[160] || CT.C160, 198, C[161] || CT.C161, 199, C[162] || CT.C162, 200, C[163] || CT.C163, 201, C[164] || CT.C164, 202, C[165] || CT.C165, 203, C[166] || CT.C166, 96, C[167] || CT.C167, 97, C[168] || CT.C168, 98, C[169] || CT.C169, 102, C[170] || CT.C170, 104, C[171] || CT.C171, 110, C[172] || CT.C172, 103, C[173] || CT.C173, 105, C[174] || CT.C174, 109, C[175] || CT.C175, 108, C[176] || CT.C176, 106, C[177] || CT.C177, 107, C[178] || CT.C178, 99, C[179] || CT.C179, 100, C[180] || CT.C180, 101, C[181] || CT.C181, 119, C[182] || CT.C182]);
+    },
+    get C184() {
+      return C[184] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Suspend",
+        [PhysicalKeyboardKey_usbHidUsage]: 20
+      });
+    },
+    get C185() {
+      return C[185] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Sleep",
+        [PhysicalKeyboardKey_usbHidUsage]: 65666
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Wake Up",
+        [PhysicalKeyboardKey_usbHidUsage]: 65667
+      });
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key A",
+        [PhysicalKeyboardKey_usbHidUsage]: 458756
+      });
+    },
+    get C188() {
+      return C[188] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key B",
+        [PhysicalKeyboardKey_usbHidUsage]: 458757
+      });
+    },
+    get C189() {
+      return C[189] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key C",
+        [PhysicalKeyboardKey_usbHidUsage]: 458758
+      });
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key D",
+        [PhysicalKeyboardKey_usbHidUsage]: 458759
+      });
+    },
+    get C191() {
+      return C[191] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key E",
+        [PhysicalKeyboardKey_usbHidUsage]: 458760
+      });
+    },
+    get C192() {
+      return C[192] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key F",
+        [PhysicalKeyboardKey_usbHidUsage]: 458761
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key G",
+        [PhysicalKeyboardKey_usbHidUsage]: 458762
+      });
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key H",
+        [PhysicalKeyboardKey_usbHidUsage]: 458763
+      });
+    },
+    get C195() {
+      return C[195] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key I",
+        [PhysicalKeyboardKey_usbHidUsage]: 458764
+      });
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key J",
+        [PhysicalKeyboardKey_usbHidUsage]: 458765
+      });
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key K",
+        [PhysicalKeyboardKey_usbHidUsage]: 458766
+      });
+    },
+    get C198() {
+      return C[198] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key L",
+        [PhysicalKeyboardKey_usbHidUsage]: 458767
+      });
+    },
+    get C199() {
+      return C[199] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key M",
+        [PhysicalKeyboardKey_usbHidUsage]: 458768
+      });
+    },
+    get C200() {
+      return C[200] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key N",
+        [PhysicalKeyboardKey_usbHidUsage]: 458769
+      });
+    },
+    get C201() {
+      return C[201] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key O",
+        [PhysicalKeyboardKey_usbHidUsage]: 458770
+      });
+    },
+    get C202() {
+      return C[202] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key P",
+        [PhysicalKeyboardKey_usbHidUsage]: 458771
+      });
+    },
+    get C203() {
+      return C[203] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key Q",
+        [PhysicalKeyboardKey_usbHidUsage]: 458772
+      });
+    },
+    get C204() {
+      return C[204] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key R",
+        [PhysicalKeyboardKey_usbHidUsage]: 458773
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key S",
+        [PhysicalKeyboardKey_usbHidUsage]: 458774
+      });
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key T",
+        [PhysicalKeyboardKey_usbHidUsage]: 458775
+      });
+    },
+    get C207() {
+      return C[207] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key U",
+        [PhysicalKeyboardKey_usbHidUsage]: 458776
+      });
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key V",
+        [PhysicalKeyboardKey_usbHidUsage]: 458777
+      });
+    },
+    get C209() {
+      return C[209] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key W",
+        [PhysicalKeyboardKey_usbHidUsage]: 458778
+      });
+    },
+    get C210() {
+      return C[210] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key X",
+        [PhysicalKeyboardKey_usbHidUsage]: 458779
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key Y",
+        [PhysicalKeyboardKey_usbHidUsage]: 458780
+      });
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Key Z",
+        [PhysicalKeyboardKey_usbHidUsage]: 458781
+      });
+    },
+    get C213() {
+      return C[213] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 1",
+        [PhysicalKeyboardKey_usbHidUsage]: 458782
+      });
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 2",
+        [PhysicalKeyboardKey_usbHidUsage]: 458783
+      });
+    },
+    get C215() {
+      return C[215] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 3",
+        [PhysicalKeyboardKey_usbHidUsage]: 458784
+      });
+    },
+    get C216() {
+      return C[216] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 4",
+        [PhysicalKeyboardKey_usbHidUsage]: 458785
+      });
+    },
+    get C217() {
+      return C[217] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 5",
+        [PhysicalKeyboardKey_usbHidUsage]: 458786
+      });
+    },
+    get C218() {
+      return C[218] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 6",
+        [PhysicalKeyboardKey_usbHidUsage]: 458787
+      });
+    },
+    get C219() {
+      return C[219] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 7",
+        [PhysicalKeyboardKey_usbHidUsage]: 458788
+      });
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 8",
+        [PhysicalKeyboardKey_usbHidUsage]: 458789
+      });
+    },
+    get C221() {
+      return C[221] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 9",
+        [PhysicalKeyboardKey_usbHidUsage]: 458790
+      });
+    },
+    get C222() {
+      return C[222] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Digit 0",
+        [PhysicalKeyboardKey_usbHidUsage]: 458791
+      });
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Enter",
+        [PhysicalKeyboardKey_usbHidUsage]: 458792
+      });
+    },
+    get C224() {
+      return C[224] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Escape",
+        [PhysicalKeyboardKey_usbHidUsage]: 458793
+      });
+    },
+    get C225() {
+      return C[225] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Backspace",
+        [PhysicalKeyboardKey_usbHidUsage]: 458794
+      });
+    },
+    get C226() {
+      return C[226] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Tab",
+        [PhysicalKeyboardKey_usbHidUsage]: 458795
+      });
+    },
+    get C227() {
+      return C[227] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Space",
+        [PhysicalKeyboardKey_usbHidUsage]: 458796
+      });
+    },
+    get C228() {
+      return C[228] = dart.const({
+        __proto__: keyboard_key.PhysicalKeyboardKey.prototype,
+        [PhysicalKeyboardKey_debugName]: "Minus",
+        [PhysicalKeyboardKey_usbHidUsage]: 458797
+      });
+    },
+    get C229() {
+      return C[229] = dart.const({
+        __proto__: keyboard_key.P

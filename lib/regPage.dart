@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:registration/extra.dart';
 import 'package:registration/main.dart';
@@ -15,37 +17,54 @@ class _DisplayState extends State<Display> {
   TextEditingController number = new TextEditingController();
 
   Gender _name = Gender.Male;
-
+  String _dropDownValue;
   Color _colors = Colors.red[700];
+  String firstnameText = '';
+  String lastnameText = '';
+  String numberText = '';
 
   void Change() {
     Color _color = Colors.green[700];
+    firstnameText = firstname.text;
+    lastnameText = lastname.text;
+    numberText = number.text;
 
-    String fisrtnameText = firstname.text;
-    String lastnameText = lastname.text;
-    String numberText = number.text;
-
-    if (fisrtnameText == 'b' && lastnameText == 'i' && numberText == '0') {
-      print(displayVisbility());
-      //print(_color);
-      // Navigator.push(
-      //     context, MaterialPageRoute(builder: (context) => Answerme()));
-    } else {
+    if (firstnameText == '' || lastnameText == '' || numberText == ''   ) {
       final snackBar = SnackBar(
-        content: Text('Complete Details!'),
+        content: Text('Complete Your Details!'),
       );
-
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      //print(_color);
+      //Navigator.push(
+      //context, MaterialPageRoute(builder: (context) => Answerme()));
+    } else {
+      
+      setState(() {
+          displayVisbility();
+      });
+      
+      
+     
     }
   }
 
   Widget displayVisbility() {
-    
     return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text("FullName =" firstnameText +' ' + lastnameText),
-          Text('')
+          Text("FullName ="+ ' '+
+              firstnameText.toString() +
+              " " +
+              lastnameText.toString(),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+          Text('Phone NO ='+ ' ' + numberText.toString(), 
+          style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),),
         ],
       ),
     );
@@ -86,6 +105,60 @@ class _DisplayState extends State<Display> {
                   Icons.phone,
                   color: Colors.green,
                 )),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 40,
+            ),
+            child: Container(
+              width: 300,
+              height: 67,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1, color: Colors.grey),
+                  borderRadius: BorderRadius.circular(5)),
+              child: Padding(
+                padding: EdgeInsets.only(),
+                child: DropdownButton(
+                  elevation: 15,
+                  hint: _dropDownValue == null
+                      ? Text(
+                          'Title',
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 18),
+                        )
+                      : Text(
+                          _dropDownValue,
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 18),
+                        ),
+                  underline: Container(
+                    height: 2,
+                    //width:
+                    color: Colors.indigo,
+                  ),
+                  isExpanded: true,
+                  iconSize: 30.0,
+                  style: TextStyle(
+                    color: Colors.deepPurple,
+                  ),
+                  items: ['MR', 'MRS', 'MASTER', 'MISS'].map(
+                    (val) {
+                      return DropdownMenuItem<String>(
+                        value: val,
+                        child: Text(val),
+                      );
+                    },
+                  ).toList(),
+                  onChanged: (val) {
+                    setState(
+                      () {
+                        _dropDownValue = val;
+                      },
+                    );
+                  },
+                ),
+              ),
+            ),
           ),
           Container(
             height: 200,
@@ -161,9 +234,7 @@ class _DisplayState extends State<Display> {
           ),
           InkWell(
             onTap: () {
-              setState(() {
                 Change();
-              });
             },
             child: Container(
               width: 100,
@@ -183,7 +254,7 @@ class _DisplayState extends State<Display> {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -198,11 +269,11 @@ class _DisplayState extends State<Display> {
           padding: EdgeInsets.only(left: 10, top: 20, right: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               collectDetail(),
               displayVisbility(),
-            ],
+                ],
           ),
         ),
       ),
