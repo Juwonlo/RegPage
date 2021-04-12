@@ -1,4 +1,4 @@
-import 'dart:ui';
+//import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:registration/extra.dart';
@@ -15,21 +15,29 @@ class _DisplayState extends State<Display> {
   TextEditingController firstname = new TextEditingController();
   TextEditingController lastname = new TextEditingController();
   TextEditingController number = new TextEditingController();
+  TextEditingController age = new TextEditingController();
 
   Gender _name = Gender.Male;
-  String _dropDownValue;
-  Color _colors = Colors.red[700];
+  String _dropDownValue = '';
+  //Color _colors = Colors.red[700];
+  //Color _color = Colors.green[700];
   String firstnameText = '';
   String lastnameText = '';
   String numberText = '';
+  String ageText = '';
+
+  Color _pressAttention = Colors.red[700];
 
   void Change() {
-    Color _color = Colors.green[700];
     firstnameText = firstname.text;
     lastnameText = lastname.text;
     numberText = number.text;
+    ageText = age.text;
 
-    if (firstnameText == '' || lastnameText == '' || numberText == ''   ) {
+    if (firstnameText == '' ||
+        lastnameText == '' ||
+        numberText == '' ||
+        ageText == '') {
       final snackBar = SnackBar(
         content: Text('Complete Your Details!'),
       );
@@ -37,34 +45,65 @@ class _DisplayState extends State<Display> {
       //print(_color);
       //Navigator.push(
       //context, MaterialPageRoute(builder: (context) => Answerme()));
+      //
     } else {
-      
       setState(() {
-          displayVisbility();
+        displayVisbility();
       });
-      
-      
-     
     }
   }
 
   Widget displayVisbility() {
     return Container(
+      height: 300,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("FullName ="+ ' '+
-              firstnameText.toString() +
-              " " +
-              lastnameText.toString(),
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-              ),
-          Text('Phone NO ='+ ' ' + numberText.toString(), 
-          style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),),
+          Text(
+            "FullName =" +
+                " " +
+                lastnameText.toString() +
+                ' ' +
+                firstnameText.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blue[900],
+            ),
+          ),
+          Text(
+            'Phone NO =' + ' ' + '0' + numberText.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blue[900],
+            ),
+          ),
+          Text(
+            'Date Of Birth =' + ' ' + ageText.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blue[900],
+            ),
+          ),
+          Text(
+            'Gender =' + ' ' + _name.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blue[900],
+            ),
+          ),
+          Text(
+            'Title =' + ' ' + _dropDownValue.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blue[900],
+            ),
+          ),
         ],
       ),
     );
@@ -72,7 +111,7 @@ class _DisplayState extends State<Display> {
 
   Widget collectDetail() {
     return Container(
-      height: 600,
+      height: 700,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -81,30 +120,55 @@ class _DisplayState extends State<Display> {
             keyboardType: TextInputType.name,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
+              hintText: 'Please Provide Your Name',
+              hintStyle: TextStyle(
+                  //fontFamily: 'Pacifico'
+                  ),
               labelText: 'FirstName',
               labelStyle: TextStyle(color: Colors.lightBlue),
-              icon: Icon(Icons.create, color: Colors.red),
+              icon: Icon(Icons.perm_identity, color: Colors.red),
             ),
           ),
           TextField(
             controller: lastname,
             decoration: InputDecoration(
                 border: OutlineInputBorder(),
+                hintText: 'Please Provide Your SurName',
+                hintStyle: TextStyle(
+                    //fontFamily: 'Pacifico'
+                    ),
                 labelText: 'LastName',
                 labelStyle: TextStyle(color: Colors.lightBlue),
-                icon: Icon(Icons.create, color: Colors.red)),
+                icon: Icon(Icons.perm_identity, color: Colors.red)),
           ),
           TextField(
             controller: number,
             keyboardType: TextInputType.phone,
             decoration: InputDecoration(
                 border: OutlineInputBorder(),
+                prefixText: '+234',
+                prefixStyle: TextStyle(color: Colors.black87),
                 labelText: 'Phone Number',
                 labelStyle: TextStyle(color: Colors.lightBlue),
                 icon: Icon(
-                  Icons.phone,
+                  Icons.phone_outlined,
                   color: Colors.green,
                 )),
+          ),
+          TextFormField(
+            controller: age,
+            keyboardType: TextInputType.datetime,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Please Provide Your Age',
+              hintStyle: TextStyle(fontFamily: 'Pacifico'),
+              labelText: 'Date Of Birth',
+              labelStyle: TextStyle(color: Colors.lightBlue),
+              icon: Icon(
+                Icons.calendar_today_outlined,
+                color: Colors.orange,
+              ),
+            ),
           ),
           Padding(
             padding: EdgeInsets.only(
@@ -117,7 +181,7 @@ class _DisplayState extends State<Display> {
                   border: Border.all(width: 1, color: Colors.grey),
                   borderRadius: BorderRadius.circular(5)),
               child: Padding(
-                padding: EdgeInsets.only(),
+                padding: EdgeInsets.only(left: 20, right: 10),
                 child: DropdownButton(
                   elevation: 15,
                   hint: _dropDownValue == null
@@ -133,13 +197,12 @@ class _DisplayState extends State<Display> {
                         ),
                   underline: Container(
                     height: 2,
-                    //width:
-                    color: Colors.indigo,
+                    color: Colors.grey,
                   ),
                   isExpanded: true,
                   iconSize: 30.0,
                   style: TextStyle(
-                    color: Colors.deepPurple,
+                    color: Colors.blue[700],
                   ),
                   items: ['MR', 'MRS', 'MASTER', 'MISS'].map(
                     (val) {
@@ -234,14 +297,17 @@ class _DisplayState extends State<Display> {
           ),
           InkWell(
             onTap: () {
-                Change();
+              Change();
+              _pressAttention = _pressAttention == Colors.red[700] ? 
+                    Colors.green[700] : 
+                    Colors.green[700];
             },
             child: Container(
               width: 100,
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
-                color: _colors,
+                color: _pressAttention,
               ),
               child: Align(
                 alignment: Alignment.center,
@@ -265,6 +331,7 @@ class _DisplayState extends State<Display> {
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
           physics: BouncingScrollPhysics(),
           padding: EdgeInsets.only(left: 10, top: 20, right: 20),
           child: Column(
@@ -272,8 +339,29 @@ class _DisplayState extends State<Display> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               collectDetail(),
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  width: 200,
+                  height: 50,
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                        left: 30, right: 30, top: 10, bottom: 13),
+                    child: Text(
+                      'YOUR DETAILS',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.black),
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.grey),
+                ),
+              ),
               displayVisbility(),
-                ],
+            ],
           ),
         ),
       ),
