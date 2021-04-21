@@ -1,9 +1,11 @@
-//import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:registration/extra.dart';
+import 'package:registration/details.dart';
+//import 'package:registration/extra.dart';
+import 'package:registration/ground.dart';
 import 'package:registration/main.dart';
 import 'package:flutter/rendering.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class Display extends StatefulWidget {
   @override
@@ -25,6 +27,8 @@ class _DisplayState extends State<Display> {
   String lastnameText = '';
   String numberText = '';
   String ageText = '';
+  FloatingActionButtonLocation _location =
+      FloatingActionButtonLocation.endDocked;
 
   Color _pressAttention = Colors.red[700];
 
@@ -42,71 +46,13 @@ class _DisplayState extends State<Display> {
         content: Text('Complete Your Details!'),
       );
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      //print(_color);
-      //Navigator.push(
-      //context, MaterialPageRoute(builder: (context) => Answerme()));
-      //
     } else {
-      setState(() {
-        displayVisbility();
-      });
+      _pressAttention = _pressAttention == Colors.red[700]
+          ? Colors.green[700]
+          : Colors.green[700];
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Details()));
     }
-  }
-
-  Widget displayVisbility() {
-    return Container(
-      height: 300,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "FullName =" +
-                " " +
-                lastnameText.toString() +
-                ' ' +
-                firstnameText.toString(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.blue[900],
-            ),
-          ),
-          Text(
-            'Phone NO =' + ' ' + '0' + numberText.toString(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.blue[900],
-            ),
-          ),
-          Text(
-            'Date Of Birth =' + ' ' + ageText.toString(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.blue[900],
-            ),
-          ),
-          Text(
-            'Gender =' + ' ' + _name.toString(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.blue[900],
-            ),
-          ),
-          Text(
-            'Title =' + ' ' + _dropDownValue.toString(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.blue[900],
-            ),
-          ),
-        ],
-      ),
-    );
   }
 
   Widget collectDetail() {
@@ -170,16 +116,20 @@ class _DisplayState extends State<Display> {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(
-              left: 40,
+          Row(children: [
+            Padding(
+              padding: EdgeInsets.only(
+                right: 15,
+              ),
+              child: Icon(Icons.person_pin_circle_outlined,
+                  color: Colors.indigo[900], size: 25),
             ),
-            child: Container(
-              width: 300,
-              height: 67,
+            Container(
+              width: 290,
               decoration: BoxDecoration(
-                  border: Border.all(width: 1, color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5)),
+                borderRadius: BorderRadius.circular(5),
+                border: Border.all(width: 1, color: Colors.grey),
+              ),
               child: Padding(
                 padding: EdgeInsets.only(left: 20, right: 10),
                 child: DropdownButton(
@@ -222,85 +172,102 @@ class _DisplayState extends State<Display> {
                 ),
               ),
             ),
-          ),
-          Container(
-            height: 200,
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.orange,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        'Gender ;',
-                        style: TextStyle(color: Colors.lightBlue, fontSize: 18),
-                      ),
-                    ),
-                  ],
+          ]),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  right: 15,
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ListTile(
-                      title: Text(
-                        'Male',
-                        style: TextStyle(color: Colors.lightBlue, fontSize: 17),
-                      ),
-                      leading: Radio(
-                          activeColor: Colors.red,
-                          value: Gender.Male,
-                          groupValue: _name,
-                          onChanged: (Gender value) {
-                            setState(() {
-                              _name = value;
-                            });
-                          }),
-                    ),
-                    ListTile(
-                      title: Text(
-                        'Female',
-                        style: TextStyle(color: Colors.lightBlue, fontSize: 17),
-                      ),
-                      leading: Radio(
-                          activeColor: Colors.red,
-                          value: Gender.Female,
-                          groupValue: _name,
-                          onChanged: (Gender value) {
-                            setState(() {
-                              _name = value;
-                            });
-                          }),
-                    ),
-                    ListTile(
-                      title: Text(
-                        'Others',
-                        style: TextStyle(color: Colors.lightBlue, fontSize: 17),
-                      ),
-                      leading: Radio(
-                          activeColor: Colors.red,
-                          value: Gender.Others,
-                          groupValue: _name,
-                          onChanged: (Gender value) {
-                            setState(() {
-                              _name = value;
-                            });
-                          }),
-                    )
-                  ],
+                child: Icon(Icons.people_outlined,
+                    color: Colors.brown[900], size: 25),
+              ),
+              Container(
+                width: 290,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(width: 1, color: Colors.grey),
                 ),
-              ],
-            ),
+                child: Padding(
+                  padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
+                  child: Column(
+                    //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(children: [
+                        Text(
+                          'Gender',
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 18),
+                        ),
+                        Icon(
+                          Icons.arrow_drop_down_outlined,
+                          color: Colors.indigo,
+                          size: 40,
+                        ),
+                      ]),
+                      ListTile(
+                        title: Text(
+                          'Male',
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 17),
+                        ),
+                        leading: Radio(
+                            activeColor: Colors.red,
+                            value: Gender.Male,
+                            groupValue: _name,
+                            onChanged: (Gender value) {
+                              setState(() {
+                                _name = value;
+                              });
+                            }),
+                      ),
+                      ListTile(
+                        title: Text(
+                          'Female',
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 17),
+                        ),
+                        leading: Radio(
+                            activeColor: Colors.red,
+                            value: Gender.Female,
+                            groupValue: _name,
+                            onChanged: (Gender value) {
+                              setState(() {
+                                _name = value;
+                              });
+                            }),
+                      ),
+                      ListTile(
+                        title: Text(
+                          'Others',
+                          style:
+                              TextStyle(color: Colors.lightBlue, fontSize: 17),
+                        ),
+                        leading: Radio(
+                            activeColor: Colors.red,
+                            value: Gender.Others,
+                            groupValue: _name,
+                            onChanged: (Gender value) {
+                              setState(() {
+                                _name = value;
+                              });
+                            }),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
           InkWell(
             onTap: () {
               Change();
-              _pressAttention = _pressAttention == Colors.red[700] ? 
-                    Colors.green[700] : 
-                    Colors.green[700];
+              //     _pressAttention = _pressAttention == Colors.red[700]
+              //         ? Colors.green[700]
+              //         : Colors.green[700];
+              //         Navigator.push(
+              // context, MaterialPageRoute(builder: (context) => Details()));
             },
             child: Container(
               width: 100,
@@ -326,6 +293,26 @@ class _DisplayState extends State<Display> {
     );
   }
 
+  Widget _upper() {
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: RadialGradient(colors: [Colors.indigo[900], Colors.cyan,]),
+      ),
+      child: Container(
+        padding: EdgeInsets.all(40),
+        decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+        // child: Text('j5A',
+        // style: TextStyle(
+        //   fontFamily: 'Pacifico',
+        //   color: Colors.indigo[900],
+        // ),
+        // ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -338,32 +325,25 @@ class _DisplayState extends State<Display> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              _upper(),
               collectDetail(),
-              Align(
-                alignment: Alignment.center,
-                child: Container(
-                  width: 200,
-                  height: 50,
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                        left: 30, right: 30, top: 10, bottom: 13),
-                    child: Text(
-                      'YOUR DETAILS',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                          color: Colors.black),
-                    ),
-                  ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.grey),
-                ),
-              ),
-              displayVisbility(),
+              //middle(),
+              //displayVisbility(),
             ],
           ),
         ),
+        floatingActionButtonLocation: _location,
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Rooms()));
+            },
+            child: Icon(
+              Icons.menu_outlined,
+              color: Colors.white,
+            ),
+            backgroundColor: Colors.cyan
+            ),
       ),
     );
   }
@@ -396,3 +376,60 @@ class _DisplayState extends State<Display> {
 //     isColor = false;
 //   }),
 // ),
+
+/////////////widget display
+//  Widget displayVisbility() {
+//     return Container(
+//       height: 300,
+//       child: Column(
+//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         children: [
+//           Text(
+//             "FullName =" +
+//                 " " +
+//                 lastnameText.toString() +
+//                 ' ' +
+//                 firstnameText.toString(),
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 20,
+//               color: Colors.blue[900],
+//             ),
+//           ),
+//           Text(
+//             'Phone NO =' + ' ' + '0' + numberText.toString(),
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 20,
+//               color: Colors.blue[900],
+//             ),
+//           ),
+//           Text(
+//             'Date Of Birth =' + ' ' + ageText.toString() + ' ' + 'Years Old',
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 20,
+//               color: Colors.blue[900],
+//             ),
+//           ),
+//           Text(
+//             'Gender =' + ' ' + _name.toString(),
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 20,
+//               color: Colors.blue[900],
+//             ),
+//           ),
+//           Text(
+//             'Title =' + ' ' + _dropDownValue.toString(),
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//               fontSize: 20,
+//               color: Colors.blue[900],
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }

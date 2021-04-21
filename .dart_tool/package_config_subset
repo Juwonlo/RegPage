@@ -22,6 +22,10 @@ async
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/lib/
+backdrop
+2.12
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/backdrop-0.6.0/
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/backdrop-0.6.0/lib/
 bazel_worker
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/bazel_worker-1.0.0/
@@ -138,6 +142,10 @@ fixnum
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.0/
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.0/lib/
+fluttertoast
+2.12
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.3/
+file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.3/lib/
 glob
 2.1
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/glob-1.2.0/
@@ -346,4 +354,8 @@ flutter_test
 2.12
 file:///C:/src/flutter/packages/flutter_test/
 file:///C:/src/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+2.12
+file:///C:/src/flutter/packages/flutter_web_plugins/
+file:///C:/src/flutter/packages/flutter_web_plugins/lib/
 2
