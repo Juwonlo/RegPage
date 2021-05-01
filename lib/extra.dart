@@ -11,6 +11,13 @@ class Answerme extends StatefulWidget {
 }
 
 class _AnswermeState extends State<Answerme> {
+  Widget _draw() {
+    return Drawer(
+
+      
+    );
+  }
+
   Widget _call() {
     // var size = MediaQuery.of(context).size;
     // final double itemWidth = size.width - 10;
@@ -733,7 +740,7 @@ class _AnswermeState extends State<Answerme> {
   @override
   Widget build(BuildContext context) {
     return BackdropScaffold(
-      headerHeight: 200,
+      headerHeight: 100,
       backLayerBackgroundColor: Colors.pink[900],
       frontLayerBackgroundColor: Colors.grey,
       frontLayerScrim: Colors.grey,
@@ -749,7 +756,11 @@ class _AnswermeState extends State<Answerme> {
         child: Container(
           width: 500,
           height: 700,
-          color: Colors.white,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+          ),
+         // child: ActionChip(),
         ),
       ),
       frontLayer: SingleChildScrollView(

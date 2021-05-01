@@ -344,6 +344,13 @@ class _DisplayState extends State<Display> {
             ),
             backgroundColor: Colors.cyan
             ),
+            bottomNavigationBar: BottomAppBar(
+              color: Colors.cyan,
+              shape: CircularNotchedRectangle(),
+              child: Container(
+                height: 50,
+              ),
+            ),
       ),
     );
   }
