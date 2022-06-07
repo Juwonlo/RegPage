@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:registration/main.dart';
-import 'package:registration/regPage.dart';
+//import 'package:registration/regPage.dart';
 
 class Details extends StatefulWidget {
   @override

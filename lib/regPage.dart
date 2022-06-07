@@ -19,8 +19,8 @@ class _DisplayState extends State<Display> {
   TextEditingController number = new TextEditingController();
   TextEditingController age = new TextEditingController();
 
-  Gender _name = Gender.Male;
-  String _dropDownValue = '';
+  Gender? _name = Gender.Male;
+  String? _dropDownValue = '';
   //Color _colors = Colors.red[700];
   //Color _color = Colors.green[700];
   String firstnameText = '';
@@ -30,7 +30,7 @@ class _DisplayState extends State<Display> {
   FloatingActionButtonLocation _location =
       FloatingActionButtonLocation.endDocked;
 
-  Color _pressAttention = Colors.red[700];
+  Color? _pressAttention = Colors.red[700];
 
   void Change() {
     firstnameText = firstname.text;
@@ -141,7 +141,7 @@ class _DisplayState extends State<Display> {
                               TextStyle(color: Colors.lightBlue, fontSize: 18),
                         )
                       : Text(
-                          _dropDownValue,
+                          _dropDownValue!,
                           style:
                               TextStyle(color: Colors.lightBlue, fontSize: 18),
                         ),
@@ -162,7 +162,7 @@ class _DisplayState extends State<Display> {
                       );
                     },
                   ).toList(),
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(
                       () {
                         _dropDownValue = val;
@@ -216,7 +216,7 @@ class _DisplayState extends State<Display> {
                             activeColor: Colors.red,
                             value: Gender.Male,
                             groupValue: _name,
-                            onChanged: (Gender value) {
+                            onChanged: (Gender? value) {
                               setState(() {
                                 _name = value;
                               });
@@ -232,7 +232,7 @@ class _DisplayState extends State<Display> {
                             activeColor: Colors.red,
                             value: Gender.Female,
                             groupValue: _name,
-                            onChanged: (Gender value) {
+                            onChanged: (Gender? value) {
                               setState(() {
                                 _name = value;
                               });
@@ -248,7 +248,7 @@ class _DisplayState extends State<Display> {
                             activeColor: Colors.red,
                             value: Gender.Others,
                             groupValue: _name,
-                            onChanged: (Gender value) {
+                            onChanged: (Gender? value) {
                               setState(() {
                                 _name = value;
                               });
@@ -298,7 +298,7 @@ class _DisplayState extends State<Display> {
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        gradient: RadialGradient(colors: [Colors.indigo[900], Colors.cyan,]),
+        gradient: RadialGradient(colors: [Colors.indigo[900]!, Colors.cyan,]),
       ),
       child: Container(
         padding: EdgeInsets.all(40),

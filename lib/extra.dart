@@ -51,7 +51,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -130,7 +130,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -209,7 +209,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -288,7 +288,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -367,7 +367,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -446,7 +446,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -525,7 +525,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
@@ -604,7 +604,7 @@ class _AnswermeState extends State<Answerme> {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.pink[900],
-                        border: Border.all(color: Colors.pink[900], width: 3),
+                        border: Border.all(color: Colors.pink[900]!, width: 3),
                         borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
